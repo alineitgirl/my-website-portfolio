@@ -76,3 +76,24 @@ const WINDOW_CONFIG = {
 };
 
 export { WINDOW_CONFIG, INITIAL_Z_INDEX };
+
+const techStack = [
+  {
+    category: "Frontend",
+    items: ["React.js", "Next.js", "Typescript", "Tailwind"],
+  },
+  {
+    category: "Backend",
+    items: ["C#", ".NET Core", "Entity Framework", "xUnit"],
+  },
+  {
+    category: "Databases",
+    items: ["SQL Server", "PostgreSQL", "MongoDB", "Redis"],
+  },
+  {
+    category: "DevOps & Tools",
+    items: ["Docker", "Git", "GitHub Actions", "Postman"],
+  },
+];
+
+export { techStack };

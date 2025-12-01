@@ -7,7 +7,6 @@ import useWindowStore from '../store/window.js';
 
 
 const Dock = () => {
-    const { openWindow, closeWindow, focusWindow } = useWindowStore();
     const dockRef = useRef(null);
 
     useGSAP(() => {
@@ -59,19 +58,19 @@ const Dock = () => {
         };
     }, []);
 
-    const toggleApp = (app) => {
-        if (!app.canOpen) {
+    const toggleApp = (id) => {
+        const { windows, openWindow, closeWindow } = useWindowStore.getState();
+        const windowState = windows[id]; 
+        
+        if (!windowState) {
             return;
         }
-
-        const window = window[app.id];
-        if (window.isOpen) {
-            closeWindow(app.id);
+        
+        if (windowState.isOpen) {
+            closeWindow(id);
         } else {
-            openWindow(app.id);
+            openWindow(id);
         }
-
-        console.log(window);
     };
 
     return (
@@ -87,7 +86,7 @@ const Dock = () => {
                             data-tooltip-id="dock-tooltip"
                             data-tooltip-delay-show={150}
                             disabled={!canOpen}
-                            onClick={() => toggleApp({ id, canOpen })}
+                            onClick={() => toggleApp(id)}
                         >
                             <img
                                 src={`/images/${icon}`}
