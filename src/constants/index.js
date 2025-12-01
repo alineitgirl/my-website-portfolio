@@ -1,7 +1,7 @@
 export const navLinks = [
-  { id: 1, name: "Portfolio" },
-  { id: 2, name: "Contact" },
-  { id: 3, name: "Projects" },
+  { id: 1, name: "Contact", type: "contact" },
+  { id: 2, name: "Projects", type: "photos" },
+  { id: 3, name: "Resume", type: "resume" },
 ];
 
 export const navIcons = [
