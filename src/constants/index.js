@@ -97,3 +97,29 @@ const techStack = [
 ];
 
 export { techStack };
+
+const blogPosts = [
+  {
+    id: 1,
+    date: "Sep 2, 2025",
+    title: "My First Blog Post",
+    link: "https://example.com/blog/my-first-post",
+    image: "/images/blog1.png",
+  },
+  {
+    id: 2,
+    date: "June 11, 2025",
+    title: "My Second Blog Post",
+    link: "https://example.com/blog/my-second-post",
+    image: "/images/blog2.png",
+  },
+  {
+    id: 3,
+    date: "May 22, 2025",
+    title: "My Third Blog Post",
+    link: "https://example.com/blog/my-third-post",
+    image: "/images/blog3.png",
+  },
+];
+
+export { blogPosts };
