@@ -398,3 +398,29 @@ export const locations = {
   resume: RESUME_LOCATION,
   trash: TRASH_LOCATION,
 };
+
+const socials = [
+  {
+    id: 1,
+    text: "Github",
+    icon: "/icons/github.svg",
+    bg: "#f4656b",
+    link: "https://github.com/alineitgirl",
+  },
+  {
+    id: 2,
+    text: "Telegram",
+    icon: "/icons/twitter.svg",
+    bg: "#00a0dc",
+    link: "https://t.me/alineitgirl",
+  },
+  {
+    id: 3,
+    text: "Linkedin",
+    icon: "/icons/linkedin.svg",
+    bg: "#0072b1",
+    link: "https://www.linkedin.com/in/alineitgirl/",
+  },
+];
+
+export { socials };
